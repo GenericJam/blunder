@@ -161,7 +161,7 @@ defmodule BlunderTest do
 
     test "when original_error is neither an exception nor a string" do
       assert Blunder.format(%Blunder{
-        original_error: {:a, :b, :c} 
+        original_error: {:a, :b, :c}
       }) =~ "{:a, :b, :c}"
     end
 

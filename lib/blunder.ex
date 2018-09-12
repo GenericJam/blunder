@@ -166,7 +166,7 @@ defmodule Blunder do
     [details: "Blunder trapped exception", original_error: error, stacktrace: stacktrace]
   end
   defp wormhole_error_to_blunder_attrs({:timeout, timeout_ms}) do
-    [details: "funcation passed to trap_exceptions exceeded timeout of #{timeout_ms} ms"]
+    [details: "funcation passed to trap_exceptions exceeded timeout of #{timeout_ms} ms", stacktrace: Exception.format_stacktrace]
   end
   defp wormhole_error_to_blunder_attrs(error) do
     [details: "Blunder trapped exit", original_error: error]
