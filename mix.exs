@@ -56,8 +56,7 @@ defmodule Blunder.Mixfile do
       maintainers: [
         "Trevor Little"
       ],
-      links: %{"Github" => repo_url()},
-      organization: "decisiv",
+      links: %{"Github" => repo_url()}
     ]
   end
 
@@ -76,6 +75,5 @@ defmodule Blunder.Mixfile do
     """
   end
 
-  defp repo_url, do: "https://github.decisiv.net/PlatformServices/blunder"
-
+  defp repo_url, do: "https://github.com/Decisiv/blunder"
 end
