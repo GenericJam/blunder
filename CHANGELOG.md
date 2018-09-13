@@ -28,7 +28,3 @@ First public release
 
 ## **0.1.0** 2018-02-12
 Initial extraction of logic from an internal umbrella app.
-
-[1.0.2]: https://github.decisiv.net/PlatformServices/blunder/tree/1.0.2
-[1.0.1]: https://github.decisiv.net/PlatformServices/blunder/tree/1.0.1
-[1.0.0]: https://github.decisiv.net/PlatformServices/blunder/tree/1.0.0
