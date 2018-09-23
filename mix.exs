@@ -38,7 +38,7 @@ defmodule Blunder.Mixfile do
       {:dialyxir, "~> 0.5", only: :dev, runtime: false},
       {:ex_doc, "~> 0.18", only: :dev},
       {:excoveralls, "~> 0.8", only: :test},
-      {:wormhole, "~> 2.1"},
+      {:wormhole, "~> 2.2"},
     ]
   end
 
