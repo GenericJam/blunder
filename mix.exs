@@ -16,7 +16,7 @@ defmodule Blunder.Mixfile do
       docs: docs(),
       aliases: aliases(),
       test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test, "ci": :test],
+      preferred_cli_env: [coveralls: :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test, ci: :test],
     ]
   end
 
@@ -34,11 +34,11 @@ defmodule Blunder.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
+      {:credo, "~> 0.10", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 0.5", only: :dev, runtime: false},
       {:ex_doc, "~> 0.18", only: :dev},
-      {:excoveralls, "~> 0.8", only: :test},
-      {:wormhole, "~> 2.1"},
+      {:excoveralls, "~> 0.10", only: :test},
+      {:wormhole, "~> 2.2"},
     ]
   end
 

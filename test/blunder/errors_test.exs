@@ -2,7 +2,9 @@ defmodule Blunder.ErrorsTest do
   use ExUnit.Case, async: true
   doctest Blunder.Errors
 
-  Blunder.Errors.deferror :test_error,
+  alias Blunder.Errors
+
+  Errors.deferror :test_error,
     summary: "The Summary",
     details: "The Details"
 
