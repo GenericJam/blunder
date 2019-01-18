@@ -139,7 +139,7 @@ defmodule Blunder do
     opts :: [timeout_ms: number, blunder: Blunder.t]
   ) :: fun_return_type | {:error, Blunder.t}
   def trap_exceptions(fun, opts \\ []) do
-    timeout_ms = Keyword.get(opts, :timeout_ms, 2_000)
+    timeout_ms = Keyword.get(opts, :timeout_ms, 30_000)
     blunder = Keyword.get(opts, :blunder, %Blunder{})
 
     case Wormhole.capture(fun, timeout_ms: timeout_ms, stacktrace: true) do
