@@ -133,6 +133,17 @@ defmodule BlunderTest do
           {:ok, _} = failing_func.()
         end)
     end
+
+    test "handles error tuple with timeout error" do
+      assert trap_exceptions(fn -> Process.exit(self(), {:timeout, {:foo, :bar}}) end) == {
+               :error, %Blunder{
+                 code: :application_error,
+                 details: "Blunder trapped exit",
+                 original_error: {:timeout, {:foo, :bar}},
+                 severity: :error, stacktrace: nil,
+                 summary: "Application Error"}
+             }
+    end
   end
 
   describe "&format/1" do
