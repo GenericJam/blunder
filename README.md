@@ -4,7 +4,7 @@ A common error struct for elixir apps
 
 ## Usage
 
-Blunder structs give you a common, expressive error type to rase in exceptions return in `{:error, %Blunder{}}` tuples. This gives you a lot more expressiveness than `{:error, "error string"}`. The `%Blunder{}` struct has the following properties you can set.
+Blunder structs give you a common, expressive error type to raise in exceptions or return in `{:error, %Blunder{}}` tuples. This gives you a lot more expressiveness than `{:error, "error string"}`. The `%Blunder{}` struct has the following properties you can set.
 
 * `code` - An atom describing the error in a machine-readable way. Defaults to `:application_error`
 * `summary` - A short description of the error, suitable for display to users
